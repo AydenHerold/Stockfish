@@ -1979,7 +1979,7 @@ void syzygy_extend_pv(const OptionsMap&         options,
                  > moveOverhead;
     };
 
-    std::list<StateInfo> sts;
+    std::vector<StateInfo> sts;
 
     // Step 0, do the rootMove, no correction allowed, as needed for MultiPV in TB.
     auto& stRoot = sts.emplace_back();
